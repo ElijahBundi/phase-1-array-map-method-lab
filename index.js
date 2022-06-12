@@ -12,5 +12,50 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  const splitString = tutorials.map(title => title.split(' '));
+  const titleCaps = [];
+  for (let item of splitString) {
+    titleCaps.push(item.map(element => element[0].toUpperCase() + element.substring(1)).join(' '))
+  }
+  return tit
 }
+
+
+// const splitString = tutorials.map((element) => {
+//   return element.split(' ')
+// })
+// console.log(splitString)
+// const upperCased = 
+
+// for (const item of splitString) {
+//   console.log(item.map((element) => (element[0].toUpperCase() + element.substring(1))
+//   ).join(' '))
+// }
+
+// console.log(upperCased)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
